@@ -1,18 +1,19 @@
 import mapboxgl from "mapbox-gl";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import geoJson from "../data/sanjose.json";
 import NavigationBar from "../components/Navbar.js";
 import "../styles/Map.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import AudioModal from "../components/AudioModal.js";
 
 mapboxgl.accessToken =
   "pk.eyJ1Ijoic3JpbmlzaGFhIiwiYSI6ImNsbXR3NGQ4bzA3N28yam16MGg0bGp1enQifQ.7mW69uArYMj80DfaGEcApw";
 
   const Marker = ({ onClick, children, point }) => {
     const _onClick = () => {
-      onClick(point.location);
+      onClick(point.audio);
     };
   
     return (
@@ -30,6 +31,8 @@ mapboxgl.accessToken =
 
   const Map = () => {
     const mapContainerRef = useRef(null);
+    const [showAudioModal, setShowAudioModal] = useState(false); 
+    const [selectedAudioData, setSelectedAudioData] = useState('');
   
     useEffect(() => {
       const map = new mapboxgl.Map({
@@ -43,7 +46,7 @@ mapboxgl.accessToken =
         const ref = React.createRef();
         ref.current = document.createElement("div");
         createRoot(ref.current).render(
-          <Marker onClick={markerClicked} point={point} />
+          <Marker onClick={()=>markerClicked(point)} point={point} />
         );
   
         new mapboxgl.Marker(ref.current)
@@ -52,13 +55,15 @@ mapboxgl.accessToken =
       });
   
       map.addControl(new mapboxgl.NavigationControl(), "top-right");
+
+      const markerClicked = (audioData) => {
+        // Show the audio modal when a marker is clicked
+        setSelectedAudioData(audioData);
+        setShowAudioModal(true);
+      };
   
       return () => map.remove();
     }, []);
-  
-    const markerClicked = (title) => {
-      window.alert(title);
-    };
   
     return (
       <div>
@@ -67,6 +72,13 @@ mapboxgl.accessToken =
   
         {/* Map container below the Navbar with grayscale filter */}
         <div className="map-container" ref={mapContainerRef} />
+
+        <AudioModal
+        show={showAudioModal}
+        handleClose={() => setShowAudioModal(false)}
+        audioData={selectedAudioData} 
+      />
+
       </div>
     );
   };

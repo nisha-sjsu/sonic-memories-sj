@@ -1,0 +1,8 @@
+.modal-content {
+    border-radius: 0 !important; /* Remove border radius */
+  }
+  
+.audio-player{
+    margin-top: 10px;
+}
+  
