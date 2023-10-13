@@ -8,13 +8,325 @@
       "stl": "Colette STL",
       "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/colette gribben/colette gribben.mp3"
     },
-        {
+    {
       "name": "Justin C.",
       "location": "San Jose Hometown/Silicon valley",
       "Longitude": -122.0575,
       "Latitude": 37.3875,
       "stl": "Justin STL",
       "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Justin_C/Justin_C.mp3"
+    },
+    {
+      "name": "Linda Poon",
+      "location": "King & Story Road",
+      "Longitude": -121.844313,
+      "Latitude": 37.339814,
+      "stl": "Linda STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/LindaPoon/Linda Poon.mp3"
+    },
+    {
+      "name": "Joshua Joya",
+      "location": "San Pedro Market Sq",
+      "Longitude": -121.894317,
+      "Latitude": 37.336662,
+      "stl": "Joshua MP3",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Joshua/joshua audio.mp3"
+    },
+    {
+      "name": "Justin Slavick",
+      "location": "Christmas in the Park",
+      "Longitude": -121.889786,
+      "Latitude": 37.33254,
+      "stl": "Justin S STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/JustinSlavick/JustinSlavick.mp3"
+    },
+    {
+      "name": "William Garrett",
+      "location": "Downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "William STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/William Garrett/William Garrett.mp3"
+    },
+    {
+      "name": "Michele",
+      "location": "48 S. 7th Street",
+      "Longitude": -121.88323,
+      "Latitude": 37.338477,
+      "stl": "Michele STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/michele/michele.mp3"
+    },
+    {
+      "name": "Rosalyn",
+      "location": "Downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "Rosalyn STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Rosealyn/Rosealyn.mp3"
+    },
+    {
+      "name": "Arthur",
+      "location": "Downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "Arthur STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Arthur/ArthurUrbanski.mp3"
+    },
+    {
+      "name": "James Bass",
+      "location": "SJMA",
+      "Longitude": -121.889967,
+      "Latitude": 37.333956,
+      "stl": "James STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/JamesBass/James Bass.mp3"
+    },
+    {
+      "name": "Sean Paul Guess",
+      "location": "East Side SJ",
+      "Longitude": -121.820494,
+      "Latitude": 37.336519,
+      "stl": "Sean STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Sean Paul Guess_files/Sean Paul Guess.mp3"
+    },
+    {
+      "name": "Avery",
+      "location": "jazz festival",
+      "Longitude": -121.886494,
+      "Latitude": 37.34878,
+      "stl": "Avery STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/AveryRamsey/AveryRamsey.mp3"
+    },
+    {
+      "name": "Toussaint Celestin",
+      "location": "SJ Giants Ball Park",
+      "Longitude": -121.862352,
+      "Latitude": 37.320639,
+      "stl": "Toussaint STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Toussaint Cflestin/Joussaint Cflestin.mp3"
+    },
+    {
+      "name": "Elizabeth Agramont Justiniano",
+      "location": "Downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "Elizabeth STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Elizabeth Agramont/ElizabethAgramont.mp3"
+    },
+    {
+      "name": "Galos & Kostia",
+      "location": "SJ Music festival",
+      "Longitude": -121.8925811,
+      "Latitude": 37.33216921,
+      "stl": "Kostia STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/kostia/kostia.mp3"
+    },
+    {
+      "name": "David Duperrault",
+      "location": "Downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/JamesBass/James Bass.mp3"
+    },
+    {
+      "name": "Svavai Yeturi",
+      "location": "Downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "Svavai STL",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Sravaiyetura/Sravaiyetura.mp3"
+    },
+    {
+      "name": "Danielle",
+      "location": "Fox Tale Fermentation",
+      "Longitude": -121.889965,
+      "Latitude": 37.336499,
+      "stl": "Danielle.stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Danielle/Danielle.mp3"
+    },
+    {
+      "name": "Chetna",
+      "location": "communication hills",
+      "Longitude": -121.860026,
+      "Latitude": 37.286143,
+      "stl": "chetna stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/01_Chetna/01_Chetna.mp3"
+    },
+    {
+      "name": "Layla",
+      "location": "San Jose (general city)",
+      "Longitude": -121.886836,
+      "Latitude": 37.351543,
+      "stl": "layla stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/02_Layla/02_Layla.mp3"
+    },
+    {
+      "name": "Tristan",
+      "location": "downtown SJ",
+      "Longitude": -121.890435,
+      "Latitude": 37.336091,
+      "stl": "tristan stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/03_Tristan/03_Trisitan.mp3"
+    },
+    {
+      "name": "Julius",
+      "location": "SJSU campus/MLK Library",
+      "Longitude": -121.885063,
+      "Latitude": 37.335661,
+      "stl": "julius stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/04_Julius/04_Julius.mp3"
+    },
+    {
+      "name": "Tomás",
+      "location": "underpass on San Carlos St.",
+      "Longitude": -122.142211,
+      "Latitude": 37.429394,
+      "stl": "tomas stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/05_Tomas/05_Tomas.mp3"
+    },
+    {
+      "name": "Jessica",
+      "location": "La Victoria Taqueria",
+      "Longitude": -121.886473,
+      "Latitude": 37.345732,
+      "stl": "jessica stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/06_Jessica/06_Jessica.mp3"
+    },
+    {
+      "name": "Seth (former BFA)",
+      "location": "downtown SJ by cesar chavez plaza",
+      "Longitude": -121.8898206,
+      "Latitude": 37.332664,
+      "stl": "seth stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/07_Seth/07_Seth.mp3"
+    },
+    {
+      "name": "Hong",
+      "location": "San Jose (general city)",
+      "Longitude": -121.886836,
+      "Latitude": 37.351543,
+      "stl": "hong stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/08_Hong/08_Hong.mp3"
+    },
+    {
+      "name": "Mirae",
+      "location": "SoFA,San Pedro Sq/Any downtown spot",
+      "Longitude": -121.8864,
+      "Latitude": 37.330514,
+      "stl": "mirae stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/09_Mirae/09_Mirae.mp3"
+    },
+    {
+      "name": "Robert (former BFA)",
+      "location": "The Corner (on William and 10th)",
+      "Longitude": -121.875582,
+      "Latitude": 37.333207,
+      "stl": "robert stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/10_Robert/10_Robert.mp3"
+    },
+    {
+      "name": "Erin",
+      "location": "SJSU",
+      "Longitude": -121.881092,
+      "Latitude": 37.335383,
+      "stl": "erin stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/11_Erin/11_Erin.mp3"
+    },
+    {
+      "name": "Kelvin (former BFA)",
+      "location": "SJSU BFA LAB (IS 226)",
+      "Longitude": -121.880996,
+      "Latitude": 37.335409,
+      "stl": "kelvin stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/12_Kelvin/12_Kelvin.mp3"
+    },
+    {
+      "name": "Long (software dev)",
+      "location": "SJ Tech Museum",
+      "Longitude": -121.890182,
+      "Latitude": 37.33169,
+      "stl": "long stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/13_Long/13_Long.mp3"
+    },
+    {
+      "name": "Nia",
+      "location": "North SJ",
+      "Longitude": -121.885462,
+      "Latitude": 37.357547,
+      "stl": "nia stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/14_Nia/14_Nia.mp3"
+    },
+    {
+      "name": "Jack",
+      "location": "MLK Library 3rd Floor",
+      "Longitude": -121.88501,
+      "Latitude": 37.335687,
+      "stl": "jack stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/15_Jack/15_Jack.mp3"
+    },
+    {
+      "name": "Rudy",
+      "location": "ryland dog park",
+      "Longitude": -121.898366,
+      "Latitude": 37.342133,
+      "stl": "rudy stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/16_Rudy/16_Rudy.mp3"
+    },
+    {
+      "name": "Maivi (former BFA)",
+      "location": "japanese friendship garden",
+      "Longitude": -121.85994,
+      "Latitude": 37.322106,
+      "stl": "maivi stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/17_Maivi/17_Maivi.mp3"
+    },
+    {
+      "name": "Thanthao (former BFA)",
+      "location": "downtown and evergreen area",
+      "Longitude": -121.771485,
+      "Latitude": 37.317161,
+      "stl": "thanthao stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/18_Thanthao/18_Thanthao.mp3"
+    },
+    {
+      "name": "Elham (former BA)",
+      "location": "San Pedro Square",
+      "Longitude": -121.8864,
+      "Latitude": 37.330514,
+      "stl": "elham stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/19_Elham/19_Elham.mp3"
+    },
+    {
+      "name": "George",
+      "location": "West San Jose",
+      "Longitude": -121.996804,
+      "Latitude": 37.306851,
+      "stl": "george stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/20_George/20_George.mp3"
+    },
+    {
+      "name": "Veronica",
+      "location": "Adobe House (SJ's 1st Mayor House)",
+      "Longitude": -121.894841,
+      "Latitude": 37.337083,
+      "stl": "veronica stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/21_Veronica/21_Veronica.mp3"
+    },
+    {
+      "name": "Ed",
+      "location": "Leigh & 280 across from SJCC",
+      "Longitude": -121.927198,
+      "Latitude": 37.314905,
+      "stl": "ed stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/22_Ed/22_Ed.mp3"
+    },
+    {
+      "name": "Valerie (former BFA?)",
+      "location": "",
+      "Longitude": "",
+      "Latitude": "",
+      "stl": "valerie stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/23_Valerie.mp3"
     }
   ]
 }
