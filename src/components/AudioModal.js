@@ -74,6 +74,7 @@ function AudioModal({ audioData, show, handleClose }) {
                     </button>
                 </div>
                 <b>Location: {audioData.location}</b>
+                <p><b>Description:</b> {audioData.Description}</p>
                 <div className="row">
                     <div className="col d-flex align-items-center">
                         <button className="btn" onClick={togglePlay}>
