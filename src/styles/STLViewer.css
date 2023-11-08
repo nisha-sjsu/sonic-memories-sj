@@ -1,0 +1,10 @@
+.stl-container {
+    position: relative;
+    transition: box-shadow 0.3s;
+    box-shadow: none;
+  }
+  
+  .stl-container:hover {
+    box-shadow: 0 0 15px 5px #800080;
+  }
+  

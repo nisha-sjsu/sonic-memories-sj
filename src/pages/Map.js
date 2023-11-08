@@ -5,7 +5,7 @@ import geoJson from "../data/sanjose.json";
 import NavigationBar from "../components/Navbar.js";
 import "../styles/Map.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import AudioModal from "../components/AudioModal.js";
 
 mapboxgl.accessToken =
@@ -19,8 +19,7 @@ mapboxgl.accessToken =
     return (
       <button onClick={_onClick} className="marker-button">
         <FontAwesomeIcon
-          icon={faLocationDot}
-          size="2xl"
+          icon={faCircle}
           beat
           className="marker-icon"
         />
@@ -38,8 +37,8 @@ mapboxgl.accessToken =
       const map = new mapboxgl.Map({
         container: mapContainerRef.current,
         style: "mapbox://styles/srinishaa/cln5dkus3005q01pwdaq4chpt",
-        center: [-121.886, 37.338],
-        zoom: 10,
+        center: [-121.915, 37.338],
+        zoom: 11,
       });
   
       geoJson.sanjose.forEach((point) => {

@@ -1,42 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import STLViewer from '../components/STLViewer';
 import NavigationBar from '../components/Navbar';
-
-const data = {
-    stlPaths: {
-        "Arthur Urbanski": "/Sound_and_3D_files/Workshop_01_CommunityFest/Arthur/ArthurUrbanski.stl",
-        "Avery Ramsey": "/Sound_and_3D_files/Workshop_01_CommunityFest/AveryRamsey/AveryRamsey.stl",
-        "Colette Gribben": "/Sound_and_3D_files/Workshop_01_CommunityFest/colette gribben/colette gribben.stl",
-        "Danielle": "/Sound_and_3D_files/Workshop_01_CommunityFest/Danielle/Danielle.stl",
-        "Elizabeth Agramont": "/Sound_and_3D_files/Workshop_01_CommunityFest/Elizabeth Agramont/ElizabethAgramont.stl",
-        "James Bass": "/Sound_and_3D_files/Workshop_01_CommunityFest/JamesBass/James Bass.stl",
-        "Justic C": "/Sound_and_3D_files/Workshop_01_CommunityFest/Justin_C/Justin_C.stl",
-        "Justin Slavick": "/Sound_and_3D_files/Workshop_01_CommunityFest/JustinSlavick/JustinSlavick_fixed.stl",
-        "Kostia": "/Sound_and_3D_files/Workshop_01_CommunityFest/Kostia/Kostia.stl",
-        "Linda Poon": "/Sound_and_3D_files/Workshop_01_CommunityFest/LindaPoon/Linda Poon.stl",
-        "Michele": "/Sound_and_3D_files/Workshop_01_CommunityFest/michele/michele.stl",
-        "Rosealyn": "/Sound_and_3D_files/Workshop_01_CommunityFest/Rosealyn/Rosealyn.stl",
-        "Sraviya Yetura": "/Sound_and_3D_files/Workshop_01_CommunityFest/Sravaiyetura/Sravaiyetura.stl",
-        "Toussaint Cflestin": "/Sound_and_3D_files/Workshop_01_CommunityFest/Toussaint Cflestin/Toussaint Cflestin(1).stl",
-        "William Garrett": "/Sound_and_3D_files/Workshop_01_CommunityFest/William Garrett/William Garrett.stl"
-    },
-};
+import geoJson from "../data/sanjose.json";
+import AudioModal from '../components/AudioModal'; // Import the AudioModal component
 
 const Viz = () => {
-    const stlPaths = data.stlPaths;
+    const itemsPerPage = 16; // Define items per page
+    const [currentPage, setCurrentPage] = useState(1);
+    const [showModal, setShowModal] = useState(false);
+    const [selectedAudio, setSelectedAudio] = useState(null);
+
+    const handleSTLClick = (audioData) => {
+        setSelectedAudio(audioData);
+        setShowModal(true);
+    };
 
     const renderSTLViewers = () => {
         const stlViewers = [];
         let rowSTLViewers = [];
 
-        Object.entries(stlPaths).forEach(([name, url], index) => {
+        const currentItems = geoJson.sanjose.slice(
+            (currentPage - 1) * itemsPerPage,
+            currentPage * itemsPerPage
+        );
+
+        currentItems.forEach((data, index) => {
             rowSTLViewers.push(
-                <div key={name} style={{ width: '25%', padding: '10px', display: 'inline-block' }}>
-                    <STLViewer name={name} width={300} height={300} url={url} />
+                <div
+                    key={data.name}
+                    style={{ width: '25%', padding: '10px', display: 'inline-block', cursor: 'pointer' }}
+                    onClick={() => handleSTLClick(data)}
+                >
+                    <STLViewer name={data.name} width={300} height={300} url={data.stl} />
                 </div>
             );
 
-            if ((index + 1) % 4 === 0 || index === Object.keys(stlPaths).length - 1) {
+            if ((index + 1) % 4 === 0 || index === currentItems.length - 1) {
                 stlViewers.push(
                     <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
                         {rowSTLViewers}
@@ -49,12 +48,32 @@ const Viz = () => {
         return stlViewers;
     };
 
+    const totalPages = Math.ceil(geoJson.sanjose.length / itemsPerPage);
+
     return (
         <div style={{ backgroundColor: 'black' }}>
             <NavigationBar className="navbar" mycolor="white" />
             <br></br>
             <br></br>
             {renderSTLViewers()}
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+                {Array.from({ length: totalPages }, (_, index) => (
+                    <button
+                        key={index}
+                        style={{ margin: '5px', padding: '5px 10px', background: currentPage === index + 1 ? 'gray' : 'white' }}
+                        onClick={() => setCurrentPage(index + 1)}
+                    >
+                        {index + 1}
+                    </button>
+                ))}
+            </div>
+            {selectedAudio && (
+                <AudioModal
+                    audioData={selectedAudio}
+                    show={showModal}
+                    handleClose={() => setShowModal(false)}
+                />
+            )}
         </div>
     );
 };
