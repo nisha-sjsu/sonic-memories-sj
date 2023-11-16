@@ -1,18 +1,42 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeUp, faPalette } from '@fortawesome/free-solid-svg-icons';
 import STLViewer from '../components/STLViewer';
 import NavigationBar from '../components/Navbar';
 import geoJson from "../data/sanjose.json";
-import AudioModal from '../components/AudioModal'; // Import the AudioModal component
+import AudioModal from '../components/AudioModal';
+import { SketchPicker } from 'react-color';
 
 const Viz = () => {
-    const itemsPerPage = 16; // Define items per page
+    const itemsPerPage = 16;
     const [currentPage, setCurrentPage] = useState(1);
     const [showModal, setShowModal] = useState(false);
     const [selectedAudio, setSelectedAudio] = useState(null);
+    const [colorPickerVisible, setColorPickerVisible] = useState({ visible: false, index: null });
+    const [colorArray, setColorArray] = useState(Array.from({ length: geoJson.sanjose.length }, () => getRandomColor()));
 
-    const handleSTLClick = (audioData) => {
+    const handleAudioIconClick = (audioData) => {
         setSelectedAudio(audioData);
         setShowModal(true);
+    };
+
+    const handleColorPickerClick = (index) => {
+        setColorPickerVisible({ visible: !colorPickerVisible.visible, index });
+    };
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    const handleColorChange = (color, index) => {
+        const newColorArray = [...colorArray];
+        newColorArray[index] = color.hex;
+        setColorArray(newColorArray);
     };
 
     const renderSTLViewers = () => {
@@ -28,10 +52,43 @@ const Viz = () => {
             rowSTLViewers.push(
                 <div
                     key={data.name}
-                    style={{ width: '25%', padding: '10px', display: 'inline-block', cursor: 'pointer' }}
-                    onClick={() => handleSTLClick(data)}
+                    style={{ width: '25%', padding: '10px', display: 'inline-block' }}
                 >
-                    <STLViewer name={data.name} width={300} height={300} url={data.stl} />
+                    <STLViewer
+                        name={data.name}
+                        width={300}
+                        height={300}
+                        url={data.stl}
+                        color={colorArray[index]}
+                        onAudioIconClick={() => handleAudioIconClick(data)}
+                        onColorPickerClick={() => handleColorPickerClick(index)}
+                    />
+                    <div style={{ marginLeft: '250px', marginTop: '5px' }}>
+                        <button
+                            style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
+                            onClick={() => handleAudioIconClick(data)}
+                        >
+                            <FontAwesomeIcon
+                                icon={faVolumeUp}
+                                style={{ color: 'white' }}
+                            />
+                        </button>
+                        <button
+                            style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
+                            onClick={() => handleColorPickerClick(index)}
+                        >
+                            <FontAwesomeIcon
+                                icon={faPalette}
+                                style={{ color: 'white', marginLeft: '10px' }}
+                            />
+                        </button>
+                        {colorPickerVisible.visible && colorPickerVisible.index === index && (
+                            <SketchPicker
+                                color={colorArray[index]}
+                                onChange={(color) => handleColorChange(color, index)}
+                            />
+                        )}
+                    </div>
                 </div>
             );
 
