@@ -8,8 +8,8 @@ const STLViewer = ({ width, height, url, name, color, onAudioIconClick, onColorP
   return (
     <div className="stl-container" style={{ width, height }}>
       <Canvas style={{ background: '#2C272E' }} camera={{ position: [0, 0, -100] }}>
-        <ambientLight intensity={0.5} />
-        <directionalLight color="white" intensity={0.8} position={[0, 10, 0]} />
+        <ambientLight intensity={0.4} />
+        <directionalLight color="white" intensity={1} position={[0, 10, 0]} />
         <pointLight position={[10, 10, 10]} />
         <STLModel url={url} color={color} />
         <OrbitControls />
