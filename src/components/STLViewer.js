@@ -2,12 +2,16 @@ import React, { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
-import '../styles/STLViewer.css';
 
 const STLViewer = ({ width, height, url, name, color, onAudioIconClick, onColorPickerClick }) => {
+  const canvasStyle = {
+    width: '100%',
+    height: '100%',
+  };
+
   return (
     <div className="stl-container" style={{ width, height }}>
-      <Canvas style={{ background: '#2C272E' }} camera={{ position: [0, 0, -100] }}>
+      <Canvas style={{ background: '#2C272E', ...canvasStyle }} camera={{ position: [0, 0, -100] }}>
         <ambientLight intensity={0.4} />
         <directionalLight color="white" intensity={1} position={[0, 10, 0]} />
         <pointLight position={[10, 10, 10]} />

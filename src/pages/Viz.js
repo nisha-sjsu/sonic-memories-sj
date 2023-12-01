@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeUp, faPalette } from '@fortawesome/free-solid-svg-icons';
 import STLViewer from '../components/STLViewer';
@@ -14,6 +14,30 @@ const Viz = () => {
     const [selectedAudio, setSelectedAudio] = useState(null);
     const [colorPickerVisible, setColorPickerVisible] = useState({ visible: false, index: null });
     const [colorArray, setColorArray] = useState(Array.from({ length: geoJson.sanjose.length }, () => getRandomColor()));
+    const [itemsPerRow, setItemsPerRow] = useState(4);
+
+    useEffect(() => {
+        const updateItemsPerRow = () => {
+            if (window.innerWidth <= 1024) {
+                setItemsPerRow(3); // Adjust for tablets
+            } else if (window.innerWidth <= 768) {
+                setItemsPerRow(2); // Adjust for mobile devices
+            } else {
+                setItemsPerRow(4); // Default for laptops and larger screens
+            }
+        };
+
+        // Update itemsPerRow when window is resized
+        window.addEventListener('resize', updateItemsPerRow);
+
+        // Initial call to set itemsPerRow based on current window width
+        updateItemsPerRow();
+
+        // Cleanup event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', updateItemsPerRow);
+        };
+    }, []);
 
     const handleAudioIconClick = (audioData) => {
         setSelectedAudio(audioData);
@@ -52,7 +76,7 @@ const Viz = () => {
             rowSTLViewers.push(
                 <div
                     key={data.name}
-                    style={{ width: '25%', padding: '10px', display: 'inline-block' }}
+                    style={{ width: `${100 / itemsPerRow}%`, padding: '10px'}}
                 >
                     <STLViewer
                         name={data.name}
@@ -92,7 +116,7 @@ const Viz = () => {
                 </div>
             );
 
-            if ((index + 1) % 4 === 0 || index === currentItems.length - 1) {
+            if ((index + 1) % itemsPerRow === 0 || index === currentItems.length - 1) {
                 stlViewers.push(
                     <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
                         {rowSTLViewers}
