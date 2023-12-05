@@ -1,3 +1,5 @@
+// Viz.js
+
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeUp, faPalette } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +8,7 @@ import NavigationBar from '../components/Navbar';
 import geoJson from "../data/sanjose.json";
 import AudioModal from '../components/AudioModal';
 import { SketchPicker } from 'react-color';
+import '../styles/Viz.css';
 
 const Viz = () => {
     const itemsPerPage = 16;
@@ -18,22 +21,18 @@ const Viz = () => {
 
     useEffect(() => {
         const updateItemsPerRow = () => {
-            if (window.innerWidth <= 1024) {
-                setItemsPerRow(3); // Adjust for tablets
+            if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+                setItemsPerRow(2); // Adjust for tablets
             } else if (window.innerWidth <= 768) {
-                setItemsPerRow(2); // Adjust for mobile devices
+                setItemsPerRow(1); // Adjust for mobile devices
             } else {
                 setItemsPerRow(4); // Default for laptops and larger screens
             }
         };
 
-        // Update itemsPerRow when window is resized
         window.addEventListener('resize', updateItemsPerRow);
-
-        // Initial call to set itemsPerRow based on current window width
         updateItemsPerRow();
 
-        // Cleanup event listener on component unmount
         return () => {
             window.removeEventListener('resize', updateItemsPerRow);
         };
@@ -76,7 +75,7 @@ const Viz = () => {
             rowSTLViewers.push(
                 <div
                     key={data.name}
-                    style={{ width: `${100 / itemsPerRow}%`, padding: '10px'}}
+                    style={{ position: 'relative', width: `${100 / itemsPerRow}%`, padding: '10px'}}
                 >
                     <STLViewer
                         name={data.name}
@@ -87,7 +86,7 @@ const Viz = () => {
                         onAudioIconClick={() => handleAudioIconClick(data)}
                         onColorPickerClick={() => handleColorPickerClick(index)}
                     />
-                    <div style={{ marginLeft: '250px', marginTop: '5px' }}>
+                    <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', zIndex: '1', marginLeft: '15px', marginTop: '15px' }}>
                         <button
                             style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
                             onClick={() => handleAudioIconClick(data)}
@@ -132,16 +131,15 @@ const Viz = () => {
     const totalPages = Math.ceil(geoJson.sanjose.length / itemsPerPage);
 
     return (
-        <div style={{ backgroundColor: 'black' }}>
+        <div className="viz-container">
             <NavigationBar className="navbar" mycolor="white" />
             <br></br>
             <br></br>
             {renderSTLViewers()}
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+            <div className="pagination-container">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
                         key={index}
-                        style={{ margin: '5px', padding: '5px 10px', background: currentPage === index + 1 ? 'gray' : 'white' }}
                         onClick={() => setCurrentPage(index + 1)}
                     >
                         {index + 1}
