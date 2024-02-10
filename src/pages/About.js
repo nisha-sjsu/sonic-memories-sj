@@ -9,23 +9,56 @@ const About = () => {
             <br></br>
             <br></br>
             <div style={{
-                margin: "50px"
+                marginRight: "150px",
+                marginLeft: "150px",
             }}>
+                <img src="/photos/header_image3.jpg" alt="Header" style={{ width: "100%", height: "auto", marginTop: "10px", marginBottom: "10px" }} />
                 <h4>About this program</h4>
+                <i>Sonic Memories in San Jose By Yoon Chung Han</i>
                 <br></br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit felis non mauris ultricies, quis vulputate est egestas. Pellentesque sit amet quam vulputate, feugiat nunc eleifend, maximus turpis.
-                Sed rutrum pretium urna, sed varius quam finibus vel. Sed malesuada augue nec leo fringilla, quis eleifend nibh sollicitudin. Aliquam efficitur convallis sapien sed efficitur.
-                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam hendrerit elementum gravida. Nunc rhoncus orci risus, fermentum pharetra ligula pulvinar eget.
-                Donec commodo in orci nec tincidunt. Suspendisse in lacus ac ex cursus placerat. Curabitur neque diam, elementum id dictum non, rhoncus tincidunt leo. Nullam elementum sem a tortor interdum sodales.
-                Sed auctor justo id lacus consequat, ac semper urna convallis. Curabitur maximus nisl ex, non fermentum erat vehicula sit amet. Fusce augue elit, lobortis quis tortor a, fermentum sagittis eros.
                 <br></br>
-                Suspendisse pulvinar eros quis neque tristique fermentum. Nam eu nibh elit. Aliquam et nulla ac velit eleifend feugiat. Nullam commodo lorem a dui hendrerit, id lacinia enim cursus. Vivamus cursus magna massa, eu tempor augue hendrerit sit amet. Sed quam nisi, suscipit quis erat sit amet, fringilla pulvinar lacus. Etiam volutpat eu massa mollis rhoncus. Pellentesque at convallis nisi.
+                Sound is everywhere and is a critical component of memorable experiences. The project Sonic Memories in San Jose explores hidden narratives discovered through the perspectives of San Jose residents. This unique project visualizes collected sound in the form of 3D prints, offering a distinctive view of the city’s history, time, experiences, memories, and spaces.<br></br> <br></br>
+
+                Cities evolve under the influence of human activities; the buildings, landscapes, roads, streets, people, and objects are constantly changed, and they determine the process of the journey. The City of San Jose has changed over time, and there remain many interesting stories that we can present through the residents' voices.<br></br> <br></br>
+
+                This exhibition showcases the outcomes of two public art workshops conducted at the San Jose Museum of Art in August 2023. The first workshop took place as part of the Community Fest on August 13, 2023, and the second took place at the City Dance event on August 17, 2023.<br></br> <br></br>
+
+                During the workshops, the participants were asked these questions:<br></br> <br></br>
+
+                - Where is your favorite place to go in San Jose?<br></br>
+                - Where is your most meaningful spot in San Jose?<br></br>
+                - What color would you choose to depict your favorite or most meaningful spot and story in San Jose?<br></br> <br></br>
+
+                Their recorded voices were recreated as 3D visualizations, and the participants customized these designs by tweaking colors and shapes. They talked about unique memories in San Jose, such as family time, coffee with friends, childhood memories, and even good restaurants. Each 3D design highlighted a unique story, and the collection of sounds became an interactive audio cityscape that included the past, present, and possible future of San Jose from the residents’ perspectives.<br></br> <br></br>
+
+                The exhibition now features a total of forty 3D-printed sculptures in a range of colors that were chosen by the workshop participants. The overall 3D form is a cylinder-like tree ring, which is unique enough, but the sculptures themselves represent the diverse voices of forty San Jose residents and their unique memories of the city. In addition to the physical sculptures, the audience can refer to an interactive website about the display and listen to the sounds while looking at the sculptures. The website is a collection of stories told by San Jose residents, and visitors can click the red dots on the website to hear the recorded sounds and see the 3D-converted forms.<br></br> <br></br>
+
+                This exhibition aims to showcase a community-based art project that explores audio-recorded memories of San Jose using interactive audiovisual map-based art and 3D-printing technology.<br></br> <br></br>
+
+                This exhibition serves as the culmination of the 2023 San Josė Creative Ambassador project, generously supported by the City of San Josė Office of Economic Development and Cultural Affairs and the David and Lucille Packard Foundation. Additional support for this program was provided by the College of Humanities and the Arts’ Artistic Excellence Programming Grant. The workshops and this exhibition are made possible with thanks to generous support from the San Josė Museum of Art and the San Josė State University student assistants.<br></br> <br></br>
+
+                Please join us in this community-based art project that celebrates and preserves audio memories of San Josė, using innovative interactive audiovisual map-based art and 3D-printing technology.<br></br> <br></br>
+
+                Exhibition Opening: Friday, February 2, 2024 4:00 p.m. - 8:00 p.m.
+                Exhibition Period: February 2, 2024 - March 1, 2024
+                The gallery will be open on Friday and Saturday 4:00 p.m. - 8:00 p.m.
+                Location: 1Culture gallery (144 E. Santa Clara st, San Jose, CA)
                 <br></br>
                 <br></br>
                 <br></br>
                 <h4>Acknowlegment</h4>
                 <br></br>
-                Vestibulum vel laoreet dolor. Nulla hendrerit leo ultricies, suscipit libero eget, dictum dui. Mauris cursus, ligula vitae scelerisque feugiat, leo augue pharetra dolor, eu mattis lorem ipsum tempor nulla. Sed ultricies porttitor quam, ac maximus quam fringilla quis. Curabitur pretium, tellus sit amet sagittis commodo, tortor metus egestas augue, et consectetur velit eros sed nisi. Curabitur sit amet maximus tellus. Sed non urna nisi. Vestibulum lectus nunc, tempor id rhoncus eget, facilisis non erat. Aliquam sit amet magna fringilla, ultrices ipsum ac, dignissim massa. Curabitur at nulla risus. Vivamus facilisis varius urna. Aenean egestas placerat nisi, vel mollis est lacinia id. Phasellus et maximus ex. Cras tincidunt turpis eget enim molestie lobortis ac convallis orci. Proin pulvinar vulputate nibh, sed fringilla nunc interdum id.
+                This exhibition serves as the culmination of the 2023 San Josė Creative Ambassador project, generously supported by the City of San Josė Office of Economic Development and Cultural Affairs and the David and Lucille Packard Foundation. <br></br>
+                Additional support for this program was provided by the College of Humanities and the Arts’ Artistic Excellence Programming Grant. <br></br>
+                The workshops and this exhibition are made possible with thanks to generous support from the San Josė Museum of Art and the San Josė State University student assistants (Hong Le, Kelly Nguyen, Kiarra Caligagen, Joseph Shin and Trevor Lindow).
+                <br></br>
+                <img src="/photos/sj_00.jpg" alt="sj_00" style={{ width: "22.5%", height: "auto",margin:"10px" }} />
+                <img src="/photos/sj_03.jpg" alt="sj_03" style={{ width: "22.5%", height: "auto",margin:"10px"}} />
+                <img src="/photos/sj_04.jpg" alt="sj_04" style={{ width: "22.5%", height: "auto",margin:"10px" }} />
+                <img src="/photos/sj_05.jpg" alt="sj_05" style={{ width: "22.5%", height: "auto",margin:"10px"}} />
+                <img src="/photos/sj_06.jpg" alt="sj_06" style={{ width: "30%", height: "auto",margin:"10px"}} />
+                <img src="/photos/sj_07.jpg" alt="sj_07" style={{ width: "30%", height: "auto",margin:"10px"}} />
+                <img src="/photos/sj_10.jpg" alt="sj_10" style={{ width: "30%", height: "auto",margin:"10px"  }} />
             </div>
         </div>
     );
