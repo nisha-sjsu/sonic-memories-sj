@@ -28,15 +28,6 @@
       "Description": "community/veggielation"
     },
     {
-      "name": "Joshua Joya",
-      "location": "San Pedro Market Sq",
-      "Longitude": -121.894317,
-      "Latitude": 37.336662,
-      "stl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Joshua/joshua.stl",
-      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Joshua/joshua audio.mp3",
-      "Description": "No available description from this person"
-    },
-    {
       "name": "Justin Slavick",
       "location": "Christmas in the Park",
       "Longitude": -121.889786,
@@ -361,12 +352,21 @@
       "Description": "Used to live on Fast Lance south on 280 & Porter (now called Leigh & 280)"
     },
     {
-      "name": "Valerie (former BFA?)",
+      "name": "Valerie (former BFA)",
       "location": "",
       "Longitude": "",
       "Latitude": "",
-      "stl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/23_Valerie.stl",
+      "stl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/valerie.stl",
       "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/23_Valerie.mp3"
+    },
+    {
+      "name": "Joshua Joya",
+      "location": "San Pedro Market Sq",
+      "Longitude": -121.894317,
+      "Latitude": 37.336662,
+      "stl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Joshua/joshua.stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Joshua/joshua audio.mp3",
+      "Description": "No available description from this person"
     }
   ]
 }

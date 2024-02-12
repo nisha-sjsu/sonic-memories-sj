@@ -5,13 +5,13 @@ import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
 
 const STLViewer = ({ width, height, url, name, color }) => {
   const canvasStyle = {
-    width: '90%',
-    height: '90%',
+    width: '100%',
+    height: '100%',
   };
 
   return (
     <div className="stl-container" style={{ width, height }}>
-      <Canvas style={{ background: '#2C272E', ...canvasStyle }} camera={{ position: [0, 0, -95] }}>
+      <Canvas style={{ background: '#2C272E', ...canvasStyle }} camera={{ position: [0, 0, -100] }}>
         <ambientLight intensity={0.4} />
         <directionalLight color="white" intensity={1} position={[0, 10, 0]} />
         <pointLight position={[10, 10, 10]} />

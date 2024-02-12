@@ -11,7 +11,7 @@ import { SketchPicker } from 'react-color';
 import '../styles/Viz.css';
 
 const Viz = () => {
-    const itemsPerPage = 16;
+    const itemsPerPage = 15;
     const [currentPage, setCurrentPage] = useState(1);
     const [showModal, setShowModal] = useState(false);
     const [selectedAudio, setSelectedAudio] = useState(null);
@@ -26,7 +26,7 @@ const Viz = () => {
             } else if (window.innerWidth <= 768) {
                 setItemsPerRow(1); // Adjust for mobile devices
             } else {
-                setItemsPerRow(4); // Default for laptops and larger screens
+                setItemsPerRow(3); // Default for laptops and larger screens
             }
         };
 
@@ -118,7 +118,7 @@ const Viz = () => {
 
             if ((index + 1) % itemsPerRow === 0 || index === currentItems.length - 1) {
                 stlViewers.push(
-                    <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginLeft: '40px' }}>
+                    <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginLeft: '100px' }}>
                         {rowSTLViewers}
                     </div>
                 );
@@ -134,9 +134,6 @@ const Viz = () => {
     return (
         <div className="viz-container">
             <NavigationBar className="navbar" mycolor="white" />
-            <br></br>
-            <br></br>
-            {renderSTLViewers()}
             <div className="pagination-container">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
@@ -155,6 +152,9 @@ const Viz = () => {
                     </button>
                 ))}
             </div>
+            <br></br>
+            <br></br>
+            {renderSTLViewers()}
             {selectedAudio && (
                 <AudioModal
                     audioData={selectedAudio}
