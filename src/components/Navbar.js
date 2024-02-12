@@ -15,7 +15,7 @@ function NavigationBar({ mycolor }) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link style={{ color: mycolor }} href={routes.viz}>
-              <b>3D Visualisation</b>
+              <b>3D Vizualisation</b>
             </Nav.Link>
             <Nav.Link style={{ color: mycolor }} href={routes.about}>
               <b>About</b>

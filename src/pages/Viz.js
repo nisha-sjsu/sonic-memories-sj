@@ -75,7 +75,8 @@ const Viz = () => {
             rowSTLViewers.push(
                 <div
                     key={data.name}
-                    style={{ position: 'relative', width: `${100 / itemsPerRow}%`, padding: '10px'}}
+                    style={{ position: 'relative', width: `${100 / itemsPerRow}%`, padding: '10px',         
+                }}
                 >
                     <STLViewer
                         name={data.name}
@@ -86,7 +87,7 @@ const Viz = () => {
                         onAudioIconClick={() => handleAudioIconClick(data)}
                         onColorPickerClick={() => handleColorPickerClick(index)}
                     />
-                    <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', zIndex: '1', marginLeft: '15px', marginTop: '15px' }}>
+                    <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1', marginLeft: '15px', marginTop: '15px' }}>
                         <button
                             style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
                             onClick={() => handleAudioIconClick(data)}
@@ -117,7 +118,7 @@ const Viz = () => {
 
             if ((index + 1) % itemsPerRow === 0 || index === currentItems.length - 1) {
                 stlViewers.push(
-                    <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+                    <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginLeft: '40px' }}>
                         {rowSTLViewers}
                     </div>
                 );
@@ -141,6 +142,14 @@ const Viz = () => {
                     <button
                         key={index}
                         onClick={() => setCurrentPage(index + 1)}
+                        style={{
+                            background: currentPage === index + 1 ? '#2C272E' : 'white',
+                            color: currentPage === index + 1 ? 'white' : 'black',
+                            border: 'none',
+                            cursor: 'pointer',
+                            padding: '10px',
+                            margin: '5px',
+                        }}
                     >
                         {index + 1}
                     </button>
