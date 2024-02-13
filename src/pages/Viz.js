@@ -75,19 +75,22 @@ const Viz = () => {
             rowSTLViewers.push(
                 <div
                     key={data.name}
-                    style={{ position: 'relative', width: `${100 / itemsPerRow}%`, padding: '10px',         
-                }}
+                    style={{
+                        position: 'relative', width: `${100 / itemsPerRow}%`, padding: '10px', display: 'flex',
+                        justifyContent: 'center', // Horizontally center align
+                        alignItems: 'center',
+                    }}
                 >
                     <STLViewer
                         name={data.name}
-                        width={300}
-                        height={300}
+                        width={350}
+                        height={350}
                         url={data.stl}
                         color={colorArray[index]}
                         onAudioIconClick={() => handleAudioIconClick(data)}
                         onColorPickerClick={() => handleColorPickerClick(index)}
                     />
-                    <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1', marginLeft: '15px', marginTop: '15px' }}>
+                    <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1', marginLeft: '30%', marginTop: '15px' }}>
                         <button
                             style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
                             onClick={() => handleAudioIconClick(data)}
@@ -118,7 +121,7 @@ const Viz = () => {
 
             if ((index + 1) % itemsPerRow === 0 || index === currentItems.length - 1) {
                 stlViewers.push(
-                    <div key={index} style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginLeft: '100px' }}>
+                    <div key={index} style={{ display: 'flex', justifyContent: 'center', margin: '20px' }}>
                         {rowSTLViewers}
                     </div>
                 );

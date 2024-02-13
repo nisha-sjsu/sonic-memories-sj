@@ -122,7 +122,7 @@
       "location": "SJ Music festival",
       "Longitude": -121.892581057239,
       "Latitude": 37.3321692066064,
-      "stl": "/Sound_and_3D_files/Workshop_01_CommunityFest/Kostia/Kostia.stl",
+      "stl": "/Sound_and_3D_files/Workshop_01_CommunityFest/kostia/Kostia.stl",
       "audioUrl": "/Sound_and_3D_files/Workshop_01_CommunityFest/kostia/kostia.mp3",
       "Description": "Finding the cat and pick up their Majka"
     },
@@ -221,8 +221,8 @@
       "location": "San Jose (general city)",
       "Longitude": -121.886836,
       "Latitude": 37.351543,
-      "stl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/08_Hong/Hong.stl",
-      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/08_Hong/08_Hong.mp3",
+      "stl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/08_Hong/hong.stl",
+      "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/08_Hong/08_hong.mp3",
       "Description": "How I was born here and came back here for college and how I'm thankful for the opportunities here and starting fresh"
     },
     {
@@ -353,9 +353,9 @@
     },
     {
       "name": "Valerie (former BFA)",
-      "location": "",
-      "Longitude": "",
-      "Latitude": "",
+      "location": "San Jose State University",
+      "Longitude": "121.8811",
+      "Latitude": "37.3352",
       "stl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/valerie.stl",
       "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/23_Valerie.mp3"
     },

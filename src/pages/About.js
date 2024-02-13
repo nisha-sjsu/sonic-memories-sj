@@ -9,8 +9,8 @@ const About = () => {
             <br></br>
             <br></br>
             <div style={{
-                marginRight: "150px",
-                marginLeft: "150px",
+                marginRight: "10%",
+                marginLeft: "10%",
             }}>
                 <img src="/photos/header_image3.jpg" alt="Header" style={{ width: "100%", height: "auto", marginTop: "10px", marginBottom: "10px" }} />
                 <h4>About this program</h4>
