@@ -354,8 +354,8 @@
     {
       "name": "Valerie (former BFA)",
       "location": "San Jose State University",
-      "Longitude": "121.8811",
-      "Latitude": "37.3352",
+      "Longitude": -121.8811,
+      "Latitude": 37.3352,
       "stl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/valerie.stl",
       "audioUrl": "/Sound_and_3D_files/Workshop_02_SJ_CityDance/23_Valerie/23_Valerie.mp3"
     },

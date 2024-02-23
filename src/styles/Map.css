@@ -12,6 +12,7 @@
 }
 
 .centered-paragraph {
+  font: 20px serif;
   text-align: center;
   margin-top: 20px; 
   position: fixed; 
@@ -22,6 +23,17 @@
   z-index: 999; 
 }
 
+.up-centered-paragraph{
+  font: 20px serif;
+  text-align: center;
+  margin-top: 20px; 
+  position: fixed; 
+  top: 100px; 
+  left: 0;
+  width: 100%; 
+  padding: 10px; 
+  z-index: 999;   
+}
 
 /* Update your CSS */
 .map-container {

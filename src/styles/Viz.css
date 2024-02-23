@@ -11,4 +11,51 @@
     margin-top: 20px;
 }
 
-/* Add more styles as needed for responsiveness */
+.viz-paragraph{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;   
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.icon-container {
+    position: absolute;
+    top: 98%;
+    right: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.color-picker {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: translateX(1px); /* Adjust as needed */
+    z-index: 2; /* Ensure it overlays */
+}
+
+@media screen and (min-width: 1500px) {
+    .icon-container {
+        position: absolute;
+        top: 98%;
+        right: 18%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .icon-container {
+        position: absolute;
+        top: 98%;
+        right: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+

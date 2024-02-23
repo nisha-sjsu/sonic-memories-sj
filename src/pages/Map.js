@@ -68,6 +68,10 @@ const Map = () => {
     <div>
       {/* NavigationBar on top */}
       <NavigationBar className="navbar"/>
+      
+      <div className="up-centered-paragraph">
+        <h3><b>What did San José residents say about <br/>their memories of their city?</b></h3>
+      </div>
 
       {/* Map container below the Navbar with grayscale filter */}
       <div className="map-container" ref={mapContainerRef} />
@@ -81,7 +85,7 @@ const Map = () => {
 
       {/* Centered paragraph */}
       <div className="centered-paragraph">
-        <p><strong>Please click the red dot to listen to the sound of San Jose residents</strong></p>
+        <h3><b>Please click the red dot to listen to the sound of San Jose residents</b></h3>
       </div>
     </div>
   );

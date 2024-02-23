@@ -3,7 +3,7 @@ import NavigationBar from "../components/Navbar.js";
 
 const About = () => {
     return (
-        <div>
+        <div style={{marginBottom:"2%"}}>
             <NavigationBar className="navbar" />
             <br></br>
             <br></br>

@@ -90,7 +90,7 @@ const Viz = () => {
                         onAudioIconClick={() => handleAudioIconClick(data)}
                         onColorPickerClick={() => handleColorPickerClick(index)}
                     />
-                    <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1', marginLeft: '30%', marginTop: '15px' }}>
+                    <div className="icon-container">
                         <button
                             style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}
                             onClick={() => handleAudioIconClick(data)}
@@ -109,14 +109,17 @@ const Viz = () => {
                                 style={{ color: 'white', marginLeft: '10px' }}
                             />
                         </button>
-                        {colorPickerVisible.visible && colorPickerVisible.index === index && (
-                            <SketchPicker
-                                color={colorArray[index]}
-                                onChange={(color) => handleColorChange(color, index)}
-                            />
-                        )}
                     </div>
+                    {colorPickerVisible.visible && colorPickerVisible.index === index && (
+        <div className="color-picker">
+        <SketchPicker
+            color={colorArray[index]}
+            onChange={(color) => handleColorChange(color, index)}
+        />
+    </div>
+                    )}
                 </div>
+
             );
 
             if ((index + 1) % itemsPerRow === 0 || index === currentItems.length - 1) {
@@ -137,6 +140,11 @@ const Viz = () => {
     return (
         <div className="viz-container">
             <NavigationBar className="navbar" mycolor="white" />
+            <br></br>
+            <p className='viz-paragraph'>Please explore a total of 40 3D audio visualizations made by the San Jose residents.
+                <br></br>You can click the speaker icon to listen to the recorded sound.
+                <br></br>You can click the palette icon to change the color of the 3D visualization.
+                <br></br>You can also drag the 3D visualization and see it from different angles. </p>
             <div className="pagination-container">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
@@ -165,6 +173,8 @@ const Viz = () => {
                     handleClose={() => setShowModal(false)}
                 />
             )}
+            <br></br>
+            <br></br>
         </div>
     );
 };
