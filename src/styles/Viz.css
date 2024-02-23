@@ -31,9 +31,8 @@
 
 .color-picker {
     position: absolute;
-    top: 0;
-    left: 70%;
-    transform: translateX(1px); /* Adjust as needed */
+    top: 10px;
+    right: 10px;
     z-index: 2; /* Ensure it overlays */
 }
 
