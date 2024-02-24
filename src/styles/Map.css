@@ -12,7 +12,6 @@
 }
 
 .centered-paragraph {
-  font: 20px serif;
   text-align: center;
   margin-top: 20px; 
   position: fixed; 
@@ -24,7 +23,6 @@
 }
 
 .up-centered-paragraph{
-  font: 20px serif;
   text-align: center;
   margin-top: 20px; 
   position: fixed; 

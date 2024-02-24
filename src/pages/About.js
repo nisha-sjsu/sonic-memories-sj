@@ -51,6 +51,7 @@ const About = () => {
                 This exhibition serves as the culmination of the 2023 San Josė Creative Ambassador project, generously supported by the City of San Josė Office of Economic Development and Cultural Affairs and the David and Lucille Packard Foundation. <br></br>
                 Additional support for this program was provided by the College of Humanities and the Arts’ Artistic Excellence Programming Grant. <br></br>
                 The workshops and this exhibition are made possible with thanks to generous support from the San Josė Museum of Art and the San Josė State University student assistants (Hong Le, Kelly Nguyen, Kiarra Caligagen, Joseph Shin, Trevor Lindow and Srinishaa Prabhakaran).
+                The software for 3D audio visualization was developed by Long Hoang. 
                 <br></br>
                 <img src="/photos/sj_00.jpg" alt="sj_00" style={{ width: "22.5%", height: "auto",margin:"10px" }} />
                 <img src="/photos/sj_03.jpg" alt="sj_03" style={{ width: "22.5%", height: "auto",margin:"10px"}} />
